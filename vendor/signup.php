@@ -24,7 +24,6 @@ session_start();
       header('Location: ../index.php');
 
    } else {
-      $_SESSION['message'] = "Not the same";
       // В случае не совпадения паролей, то пользователь перенаправляется на register.php
       header('Location: ../register.php');
    }
