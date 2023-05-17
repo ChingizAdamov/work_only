@@ -20,7 +20,7 @@ session_start();
 
       mysqli_query($connect, "INSERT INTO `users` (`id`, `name`, `login`, `phone`, `email`, `password`, `ret_password`) VALUES (NULL, '$name', '$login', '$phone', '$email', '$password', '$ret_password')");
 
-       $_SESSION['message'] = 'Регистация прошла успешно';
+      
       header('Location: ../index.php');
 
    } else {
